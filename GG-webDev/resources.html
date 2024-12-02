@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geeks's Guide to web development </title>
+
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js" integrity="sha512-/Swpp6aCQ0smuZ+zpklJqMClcUlvxhpLf9aAcM7JjJrj2waCU4dikm3biOtMVAflOOeniW9qzaNXNrbOAOWFCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-markup.min.js" integrity="sha512-+ELqhG7rn9xgybNJa3VI05AczCW2IaKwpKdDC5lD8RMAGc6t+OEV0Cta1QyKCrsncgaRHiN80atxfVo72+M8xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-scss.min.js" integrity="sha512-aczOaJ+mB9uGT6dMJbDaUsS2PWG+XII+1ypFQ0L22Z132V6kMM6m70pQssXsPAFmLI5xkgx/hknBuUuJIJKZfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/unescaped-markup/prism-unescaped-markup.min.js" integrity="sha512-rQtEAFW9oS0hBzTOYejcMPkq3jYbOoueW4C5CkRmrC3yzjw24oT+9V72/JGvI3EzAnU3DZlUn76OD0WTAJhP/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" integrity="sha512-jkelqcQ/rwCw36MumZ5fWlgs+aZEMLrgGt51ParMK7Tyam7kB5ZG+mB5R0NSeoGVr/4N+q3oGpLaFR/vXgzjTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/unescaped-markup/prism-unescaped-markup.min.css" integrity="sha512-g33HCZ23fueSK96JEeoy9DelAlu7Ry5mtxqLk+zlEiPj7NIpFI6T9mybOvQxjBN50FALFDCviMXiLqWJcFwzaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/toolbar/prism-toolbar.min.css" integrity="sha512-Dqf5696xtofgH089BgZJo2lSWTvev4GFo+gA2o4GullFY65rzQVQLQVlzLvYwTo0Bb2Gpb6IqwxYWtoMonfdhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+    <!--Code pour favicon // Depuis ancient projet recette en pot et W3school-->
+    <!--https://www.w3schools.com/html/html_favicon.asp-->
+
+    <!--Favicon(s) de différentes grandeures-->
+
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48x48.png" />
+
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script>
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDUHnl1KV97pdZJzNXWVK7rLeMh5i145Dg",
+            authDomain: "gg-to-web-developpement.firebaseapp.com",
+            projectId: "gg-to-web-developpement",
+            storageBucket: "gg-to-web-developpement.appspot.com",
+            messagingSenderId: "310307301793",
+            appId: "1:310307301793:web:cc5956a6733797751443e0",
+            measurementId: "G-GPE0HZCTR7"
+        }
+    </script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/editor.js" defer></script>
+
+    <!-- <script src="scripts/components/test.js" defer></script>-->
+
+</head>
+
+<body id="go_up" data-component="Scrolly">
+    <!--Ouverture de la balise header-->
+    <header class="header" data-component="Header">
+
+        <div class="wrapper">
+
+            <!--Logo du site-->
+            <a href="index.html" aria-label="Menu" class="header__brand"><svg width="200" height="35" viewBox="0 0 398 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M72 64.872V69H0V64.872H20.832C15.712 61.864 11.68 57.8 8.736 52.68C5.856 47.496 4.416 41.64 4.416 35.112C4.416 25.256 7.808 17 14.592 10.344C21.44 3.688 29.664 0.359997 39.264 0.359997C48.928 0.359997 57.312 3.528 64.416 9.86399L56.64 21.096C53.632 18.472 50.848 16.68 48.288 15.72C45.792 14.696 43.072 14.184 40.128 14.184C34.432 14.184 29.632 16.136 25.728 20.04C21.824 23.88 19.872 28.968 19.872 35.304C19.872 41.64 21.728 46.728 25.44 50.568C29.216 54.344 33.696 56.232 38.88 56.232C44.064 56.232 48.384 55.24 51.84 53.256V34.824H66.912V58.632C64.736 61.064 62.144 63.144 59.136 64.872H72ZM144 64.872V69H72V64.872H92.832C87.712 61.864 83.68 57.8 80.736 52.68C77.856 47.496 76.416 41.64 76.416 35.112C76.416 25.256 79.808 17 86.592 10.344C93.44 3.688 101.664 0.359997 111.264 0.359997C120.928 0.359997 129.312 3.528 136.416 9.86399L128.64 21.096C125.632 18.472 122.848 16.68 120.288 15.72C117.792 14.696 115.072 14.184 112.128 14.184C106.432 14.184 101.632 16.136 97.728 20.04C93.824 23.88 91.872 28.968 91.872 35.304C91.872 41.64 93.728 46.728 97.44 50.568C101.216 54.344 105.696 56.232 110.88 56.232C116.064 56.232 120.384 55.24 123.84 53.256V34.824H138.912V58.632C136.736 61.064 134.144 63.144 131.136 64.872H144ZM169.344 64.872V69H144V64.872H169.344ZM267.137 64.872V69H232.865L218.177 22.344L203.585 69H169.312V64.872H191.009L169.024 1.89599H185.249L198.497 40.488L210.401 1.89599H226.049L237.857 40.488L251.201 1.89599H267.425L245.441 64.872H267.137ZM275.35 64.872V1.89599H323.734V15.24H290.326V29.064H320.374V41.832H290.326V55.752H324.79V64.872H334.102V69H266.038V64.872H275.35ZM397.682 64.872V69H328.85V64.872H338.162V1.89599H364.274C368.818 1.89599 372.722 2.43999 375.986 3.528C379.314 4.616 381.81 6.088 383.474 7.944C386.482 11.4 387.986 15.304 387.986 19.656C387.986 24.904 386.29 28.808 382.898 31.368C381.746 32.264 380.946 32.84 380.498 33.096C380.05 33.288 379.25 33.64 378.098 34.152C382.258 35.048 385.554 36.936 387.986 39.816C390.482 42.632 391.73 46.152 391.73 50.376C391.73 56.712 389.234 61.544 384.242 64.872H397.682ZM353.138 56.328H363.41C367.698 56.328 370.898 55.816 373.01 54.792C375.186 53.704 376.274 51.624 376.274 48.552C376.274 45.416 375.122 43.368 372.818 42.408C370.578 41.384 366.962 40.872 361.97 40.872H353.138V56.328ZM353.138 29.064H360.242C364.402 29.064 367.474 28.616 369.458 27.72C371.506 26.824 372.53 24.904 372.53 21.96C372.53 18.952 371.602 16.968 369.746 16.008C367.89 15.048 364.754 14.568 360.338 14.568H353.138V29.064Z" fill="white" />
+                </svg>
+
+            </a>
+
+            <!--Menu Principal-->
+            <nav class="nav__principal">
+
+                <ul>
+                    <li><a class="nav__item--bg" href="video_landingPage.html" aria-label="Videos">Watch the videos</a></li>
+
+                    <li><a class="nav__item--bg" href="resources.html" aria-label="Resources">Resources</a></li>
+
+                    <!--<li><a class="nav__item--bg" href="interactive.html" aria-label="Interactive">Interactive learning</a></li>-->
+
+                    <li><a class="nav__item--bg" href="test-ground.html" aria-label="Editor">Testing Ground</a></li>
+                    <!--    <li><a href="test.html">TEST</a></li>-->
+
+                </ul>
+
+
+            </nav>
+
+
+        </div>
+        <div class="wrapper">
+            <!--Menu secondaire pour mobile-->
+            <!--default display:none-->
+            <button class="header__toggle js-button-toggle" aria-label="Menu Hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+
+
+    </header>
+
+
+
+    <img src="assets/images/square1.png" alt="square1" class="square1" />
+    <img src="assets/images/square2.png" alt="square2" class="square2" />
+    <img src="assets/images/circle1.png" alt="circle1" class="circle1 resource-circle" data-scrolly="fromBottom" />
+
+    <div class="hero wrapper">
+        <div class="hero_media"></div>
+
+        <div class="contenue_hero">
+            <h1>Resources</h1>
+            <p>
+                This page external resources to help you out on your web coding for your personal need. Please understand,
+                they are EXTERNAL resources that are from exernal documents, websites and extension. Use the tool that are
+                presented wisely :)
+            </p>
+        </div>
+    </div>
+
+    <section class="resources-cards wrapper">
+        <article class="resource-card r-card1" data-scrolly="fromLeft">
+            <h3>W3Schools</h3>
+            <p>
+                W3Schools it's a perfect website for newcomers of web developer. The website offers simple a more
+                traditional and simple learning of coding that could help you to start on your journey to coding.
+            </p>
+            <a class="resource-link" href="https://www.w3schools.com/" target="_blank">Go to the website! > </a>
+        </article>
+
+        <article class="resource-card r-card2" data-scrolly="fromLeft">
+            <h3>CASS Concordia</h3>
+            <p>
+                The Computation Arts Student Society organize events that could help students in needs and host workshops to
+                help out on programming and learning on new stuff for their personel interest.
+            </p>
+            <a class="resource-link" href="https://www.instagram.com/cassconcordia/ " target="_blank">
+                Go to the insta! ></a>
+        </article>
+
+        <article class="resource-card r-card3" data-scrolly="fromLeft">
+            <h3>Flexbox Guide</h3>
+            <p>
+                Created by Chris Coyier, it explains everything about flexbox, focusing on all the different possible
+                properties for the parent element (the flex container) and the child elements (the flex items).
+            </p>
+            <a class="resource-link" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">
+                Go to the website! >
+            </a>
+        </article>
+
+        <article class="resource-card r-card4" data-scrolly="fromLeft">
+            <h3>Animate CSS</h3>
+            <p>
+                A library of ready-to-use, cross-browser animations for use in your web projects. Great for emphasis, home
+                pages, sliders, and attention-guiding hints.
+                <br />
+                -Daniel Eden and friends 
+            </p>
+            <a class="resource-link" href="https://animate.style/" target="_blank"> Go to the doc! ></a>
+        </article>
+
+        <article class="resource-card r-card5" data-scrolly="fromLeft">
+            <h3>Emmet's documentation - Cheat sheet</h3>
+            <p>
+                This is a cheat sheet documentation by Emmet. Documents every shortcut keys for a more quicker and efficient
+                way when coding html. 
+            </p>
+            <a class="resource-link" href="https://docs.emmet.io/cheat-sheet/" target="_blank"> Go to the cheat sheet! ></a>
+        </article>
+
+        <article class="resource-card r-card6" data-scrolly="fromLeft">
+            <h3>Lighthouse</h3>
+            <p>
+                An open-source tool extension from Google Chrome, it analyse the integraty of the website from performance
+                to the SEO itself.
+            </p>
+            <a class="resource-link" href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk" target="_blank">
+                Go to Google Chrome market! ></a>
+        </article>
+
+        <article class="resource-card r-card7" data-scrolly="fromLeft">
+            <h3>MDN</h3>
+            <p>
+                Mozilla developer is a hub for more expert and professional web developers. This is a community that has
+                deeper documentations, blogs and more to all users who want to learn or help to contribute it.
+            </p>
+            <a class="resource-link" href="https://developer.mozilla.org/en-US/" target="_blank"> Go to the website! ></a>
+        </article>
+
+        <article class="resource-card r-card8" data-scrolly="fromLeft">
+            <h3>Google Fonts - Awesome Icon</h3>
+            <p>Icons created by Google, easy to use to inegrated in your website</p>
+            <a class="resource-link button--skew" href="https://fontawesome.com/icons/google?f=brands&s=solid">
+                Go get your icons! ></a>
+        </article>
+
+        <article class="resource-card r-card9" data-scrolly="fromLeft">
+            <h3>Methodology - BEM</h3>
+            <p>
+                BEM (Block, Element, Modifier) is a component-based approach to web development. This makes interface
+                development easy and fast even with a complex UI, and it allows reuse of existing code.
+            </p>
+            <a class="resource-link" href="https://en.bem.info/methodology/quick-start/" target="_blank">
+                Go to the website! ></a>
+        </article>
+    </section>
+
+    <footer class="main_footer wrapper">
+
+
+        <p>Hubert Sia © All rights reserved.</p>
+        <a href="#go_up" class="btn__top"><span class="material-symbols-outlined" aria-label="Top button">expand_less</span></a>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js" integrity="sha512-/Swpp6aCQ0smuZ+zpklJqMClcUlvxhpLf9aAcM7JjJrj2waCU4dikm3biOtMVAflOOeniW9qzaNXNrbOAOWFCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-markup.min.js" integrity="sha512-+ELqhG7rn9xgybNJa3VI05AczCW2IaKwpKdDC5lD8RMAGc6t+OEV0Cta1QyKCrsncgaRHiN80atxfVo72+M8xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-scss.min.js" integrity="sha512-aczOaJ+mB9uGT6dMJbDaUsS2PWG+XII+1ypFQ0L22Z132V6kMM6m70pQssXsPAFmLI5xkgx/hknBuUuJIJKZfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/unescaped-markup/prism-unescaped-markup.min.js" integrity="sha512-rQtEAFW9oS0hBzTOYejcMPkq3jYbOoueW4C5CkRmrC3yzjw24oT+9V72/JGvI3EzAnU3DZlUn76OD0WTAJhP/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js" integrity="sha512-jkelqcQ/rwCw36MumZ5fWlgs+aZEMLrgGt51ParMK7Tyam7kB5ZG+mB5R0NSeoGVr/4N+q3oGpLaFR/vXgzjTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/show-language/prism-show-language.min.js" integrity="sha512-rbEpCGuIBJX+tniFtcN/64AnyNKyrHCak/B1XEoAHQ71v3XlYBPBXRpQQ+y5aNCfqcaLQTVGPJEwCMbllRKNmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js" integrity="sha512-pUNGXbOrc+Y3dm5z2ZN7JYQ/2Tq0jppMDOUsN4sQHVJ9AUQpaeERCUfYYBAnaRB9r8d4gtPKMWICNhm3tRr4Fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/toolbar/prism-toolbar.min.js" integrity="sha512-YrvgEHAi5/3o2OT+/vh1z19oJXk/Kk0qdVKbjEFl9VRmcLTaWRYzVziZCvoGpJ2TrnV7rB8pnJcz1ioVJjgw2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</body>
+
+</html>
